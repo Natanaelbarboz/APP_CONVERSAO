@@ -60,7 +60,7 @@ def main(page: ft.Page):
                 resultado.value = "Por favor, selecione as unidades."
             else:
                 valor_convertido = converter(valor, de, para)
-                resultado.value = f"Resultado: {valor_convertido:.3f} {para}"
+                resultado.value = f"Resultado: {valor_convertido} {para}"
         except ValueError:
             resultado.value = "Por favor, insira um valor numérico válido."
         page.update()
